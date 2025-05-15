@@ -1,0 +1,23 @@
+@use "sass:color";
+
+// MAIN COLORS
+$primaryColor: #111827;
+$complementaryColor: #f9fafb;
+$brandColor: #4338ca;
+
+$highlightColor: #d1d5db;
+$dangerColor: #7f1d1d;
+
+// MIXIN: Set text color dynamically
+@mixin setBackground($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+// FUNCTIONS
+@function set-text-color($color){
+  @if(color.channel($color, "lightness", $space: hsl) > 70) { 
+    @return $complementaryColor; 
+  } @else {
+    @return $primaryColor;
+  }
+}

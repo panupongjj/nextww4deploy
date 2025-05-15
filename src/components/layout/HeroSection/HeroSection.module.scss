@@ -1,0 +1,36 @@
+@use "sass:color";
+@use '@/styles/scss/abstracts/' as *;
+
+.showcase {
+  background: no-repeat center/cover;  
+  // bg-image is passed in as dynamic prop in Hero.jsx
+  height: 25vh;
+  color: $complementaryColor;
+
+  .overlay {
+    background-color: rgba(0, 0, 15, 0.7);
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2.8em;
+      font-weight: 400;
+      color: color.adjust($brandColor, $lightness: 35%);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin: 0.5rem;
+      font-size: 0.9em;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.notFoundBox {
+  margin-top: 1rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .twinBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $primaryColor;
+    font-weight: normal;
+  }
+
+  span {
+    margin: 0;
+    padding: 2rem;
+    border-right: 2px solid $highlightColor;
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  a {
+    padding: 2rem;
+    font-size: 1em;
+    text-decoration: none;
+
+    &:hover {
+      color: $brandColor;
+    }
+  }
+}
