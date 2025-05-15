@@ -44,15 +44,15 @@ module.exports = (phase) => {
     })(),
     NEWS_API_KEY: process.env.NEWS_API_KEY,
   }
-  const nextConfig = {
-   output: 'export',
-   distDir: 'dist'
-  }
+  // const nextConfig = {
+  //  output: 'export',
+  //  distDir: 'dist'
+  // }
   // Next.config returns an object
   return {
     reactStrictMode,
     images,
-    env,
-    nextConfig
+    env
+    // nextConfig
   }
 }
