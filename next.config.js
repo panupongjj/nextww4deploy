@@ -52,7 +52,9 @@ module.exports = (phase) => {
   return {
     reactStrictMode,
     images,
-    env
+    env,
+    output: 'export',
+    distDir: 'dist'
     // nextConfig
   }
 }
