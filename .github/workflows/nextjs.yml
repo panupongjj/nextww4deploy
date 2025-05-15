@@ -2,6 +2,8 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
+
+#Deploy a Next.js App to GitHub Pages ==> https://www.youtube.com/watch?v=mJuz45RXeXY
 name: Deploy Next.js site to Pages
 
 on:
@@ -78,7 +80,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./dist
 
   # Deployment job
   deploy:

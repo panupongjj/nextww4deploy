@@ -1,8 +1,11 @@
+#Deploy a Next.js App to GitHub Pages ==> https://www.youtube.com/watch?v=mJuz45RXeXY
+
 # [C] NEXT.JS: DATA RENDERING COMPLEXITIES
 
 ## 4. CODEFEED EXTERNAL API RENDERING: SSG
 
 ### A. RENDERING WITH "STATIC SITE GENERATION" (SSG)
+
 
 As discussed, to fully utilise the advantages of Next.js, we can enact Static Site Generation (SSG) to pre-render pages prior to any user requests:
 

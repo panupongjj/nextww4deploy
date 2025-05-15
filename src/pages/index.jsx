@@ -23,22 +23,22 @@ function HomePage() {
 }
 
 // ngsp
-export const getStaticProps = async context => {
-  // Fetch data but form our API
-  const response = await fetch (`${process.env.SERVER_NAME}/api/news`);
-  const data = await response.json();
+// export const getStaticProps = async context => {
+//   // Fetch data but form our API
+//   const response = await fetch (`${process.env.SERVER_NAME}/api/news`);
+//   const data = await response.json();
 
-  if(!response.ok){
-    throw new Error(`Failed to fetch posts - Error ${response.status}: ${data.message}`)
-  }
+//   if(!response.ok){
+//     throw new Error(`Failed to fetch posts - Error ${response.status}: ${data.message}`)
+//   }
 
-  console.log(data);
+//   console.log(data);
   
-  return {
-    props: {
-      articles:data
-    },
-    revalidate: 60*60
-  };
-};
+//   return {
+//     props: {
+//       articles:data
+//     },
+//     revalidate: 60*60
+//   };
+// };
 export default HomePage;
