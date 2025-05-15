@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
+    "deploy": "next build && next export",
     "lint": "next lint",
     "build:scss": "sass --no-source-map src/styles/scss/main.scss:src/styles/globals.css"
   },
